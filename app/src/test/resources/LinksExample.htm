@@ -1,0 +1,40 @@
+<!-- File name: LinksExample.htm --><html>
+<html>
+ <head><title>Test Links</title>
+  <script>
+   function alertMe(){
+    testResult = document.getElementById('testResult');
+    alert(testResult.value)
+    <!-- testResult.value = "You pressed the Alert button!" --!>
+   }
+  </script>
+ </head>
+ <body>
+  <form >
+   <p>This is a sample webpage.</p><ul>
+   <li><a href="about:blank" id="one" name="book1">Pickaxe1</a><br>
+   <li><a href="SecondOption.htm" id="two" name="book2">Pickaxe2</a><br/>
+   <li> Check Me:<input type="checkbox" id="three" name="checkme1" ><br/>
+   <li>
+   <input type="radio" name="clickme2" id="four1"> 1st Choice <br/>
+   <input type="radio" name="clickme2" id="four2"> 2nd Choice <br/> 
+   <li> <select id="five" name="select1">
+    <option></option>
+    <option>Web Testing</option>
+    <option>in Ruby</option>
+    <option value="fun">is fun</option>
+   </select>
+   <br/><br/>
+   <li> <select id="six" name="select2" multiple="multiple">
+    <option></option>
+    <option>Test Select</option>
+    <option>I like it</option>
+    <option value="Happy">Happy Life</option>
+   </select> <br/>
+   <li> <input type="text" id="seven" name="typeinme"> </li>
+   <li> <input type="text" style="width:248px;" id="testResult" value="Test Result"/> 
+   <input type="button" id="eight" name="clickme3" value="alert" onClick='alertMe()'/> <br/>
+   <li><img src="images/doit.gif" width=20px height=20px > <br/> </ul>
+  </form>
+ </body>
+</html>
